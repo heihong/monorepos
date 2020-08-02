@@ -28,6 +28,18 @@
     "navigation-e2e": {
       "tags": [],
       "implicitDependencies": ["navigation"]
+    },
+    "navigation-step-a": {
+      "tags": []
+    },
+    "navigation-step-b": {
+      "tags": []
+    },
+    "navigation-step-c": {
+      "tags": []
+    },
+    "navigation-step-d": {
+      "tags": []
     }
   }
 }

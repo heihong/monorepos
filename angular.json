@@ -123,6 +123,134 @@
           }
         }
       }
+    },
+    "navigation-step-a": {
+      "projectType": "library",
+      "root": "libs/navigation/step-a",
+      "sourceRoot": "libs/navigation/step-a/src",
+      "prefix": "monorepos",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/navigation/step-a/tsconfig.lib.json",
+              "libs/navigation/step-a/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-a/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/navigation/step-a/jest.config.js",
+            "tsConfig": "libs/navigation/step-a/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/navigation/step-a/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "navigation-step-b": {
+      "projectType": "library",
+      "root": "libs/navigation/step-b",
+      "sourceRoot": "libs/navigation/step-b/src",
+      "prefix": "monorepos",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/navigation/step-b/tsconfig.lib.json",
+              "libs/navigation/step-b/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-b/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/navigation/step-b/jest.config.js",
+            "tsConfig": "libs/navigation/step-b/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/navigation/step-b/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "navigation-step-c": {
+      "projectType": "library",
+      "root": "libs/navigation/step-c",
+      "sourceRoot": "libs/navigation/step-c/src",
+      "prefix": "monorepos",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/navigation/step-c/tsconfig.lib.json",
+              "libs/navigation/step-c/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-c/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/navigation/step-c/jest.config.js",
+            "tsConfig": "libs/navigation/step-c/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/navigation/step-c/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "navigation-step-d": {
+      "projectType": "library",
+      "root": "libs/navigation/step-d",
+      "sourceRoot": "libs/navigation/step-d/src",
+      "prefix": "monorepos",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/navigation/step-d/tsconfig.lib.json",
+              "libs/navigation/step-d/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-d/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/navigation/step-d/jest.config.js",
+            "tsConfig": "libs/navigation/step-d/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/navigation/step-d/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

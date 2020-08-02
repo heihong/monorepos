@@ -15,7 +15,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepos/navigation/step-a": ["libs/navigation/step-a/src/index.ts"],
+      "@monorepos/navigation/step-b": ["libs/navigation/step-b/src/index.ts"],
+      "@monorepos/navigation/step-c": ["libs/navigation/step-c/src/index.ts"],
+      "@monorepos/navigation/step-d": ["libs/navigation/step-d/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
