@@ -43,6 +43,9 @@
     },
     "navigation-data-setup": {
       "tags": []
+    },
+    "navigation-router": {
+      "tags": []
     }
   }
 }

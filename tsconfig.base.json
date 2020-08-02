@@ -22,7 +22,8 @@
       "@monorepos/navigation/step-d": ["libs/navigation/step-d/src/index.ts"],
       "@monorepos/navigation/data-setup": [
         "libs/navigation/data-setup/src/index.ts"
-      ]
+      ],
+      "@monorepos/navigation/router": ["libs/navigation/router/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
