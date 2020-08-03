@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
-import { PATH } from './settings/path.settings' 3
+import { PATH } from './settings/path.settings'
 
 const routes = [
   {
@@ -32,6 +32,11 @@ const routes = [
         '@monorepos/navigation/step-d'
       ).then(m => m.StepDModule)
   },
+  {
+    path: '',
+    redirectTo: PATH.Step_A,
+    pathMatch: 'full'
+  }
 ]
 
 @NgModule({

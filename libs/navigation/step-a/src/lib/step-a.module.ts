@@ -12,7 +12,8 @@ export const stepARoutes: Route[] = [];
     RouterModule.forChild([
       {path: '', pathMatch: 'full', component: StepAComponent}
     ]),
-    StepNavigationModule],
+    StepNavigationModule
+  ],
   declarations: [StepAComponent],
 })
 export class StepAModule {}
