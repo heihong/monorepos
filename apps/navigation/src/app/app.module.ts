@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
-import { PATH } from './settings/path.settings' 
+import { PATH } from './settings/path.settings' 3
 
 const routes = [
   {
@@ -35,8 +36,12 @@ const routes = [
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,
-    RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+   // !environment.production ? StoreDevtoolsModule.instrument() : [],
+   StoreDevtoolsModule.instrument()
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
