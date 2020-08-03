@@ -46,6 +46,9 @@
     },
     "navigation-router": {
       "tags": []
+    },
+    "step-navigation": {
+      "tags": []
     }
   }
 }

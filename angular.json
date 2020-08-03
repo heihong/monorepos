@@ -318,6 +318,38 @@
           "style": "scss"
         }
       }
+    },
+    "step-navigation": {
+      "projectType": "library",
+      "root": "libs/step-navigation",
+      "sourceRoot": "libs/step-navigation/src",
+      "prefix": "monorepos",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/step-navigation/tsconfig.lib.json",
+              "libs/step-navigation/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/step-navigation/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/step-navigation/jest.config.js",
+            "tsConfig": "libs/step-navigation/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/step-navigation/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

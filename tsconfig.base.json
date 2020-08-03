@@ -23,7 +23,8 @@
       "@monorepos/navigation/data-setup": [
         "libs/navigation/data-setup/src/index.ts"
       ],
-      "@monorepos/navigation/router": ["libs/navigation/router/src/index.ts"]
+      "@monorepos/navigation/router": ["libs/navigation/router/src/index.ts"],
+      "@monorepos/step-navigation": ["libs/step-navigation/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
