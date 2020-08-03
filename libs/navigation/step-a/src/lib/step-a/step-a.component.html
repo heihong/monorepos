@@ -1,1 +1,9 @@
 <p>step-a works!</p>
+
+
+<footer>
+    <monorepos-step-navigation [disablePrevious]="true"
+      (previous)="ngrxRouter.previous()"
+      (next)="ngrxRouter.next()"
+    ></monorepos-step-navigation>
+</footer>

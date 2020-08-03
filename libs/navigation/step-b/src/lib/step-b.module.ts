@@ -2,11 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Route } from '@angular/router';
 import { StepBComponent } from './step-b/step-b.component';
+import { StepNavigationModule } from '@monorepos/step-navigation'
 
 export const stepBRoutes: Route[] = [];
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule, 
+    RouterModule.forChild([
+      {path: '', pathMatch: 'full', component: StepBComponent}
+    ]),
+    StepNavigationModule
+  ],
   declarations: [StepBComponent],
 })
 export class StepBModule {}
