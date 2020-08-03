@@ -25,7 +25,9 @@
               "apps/navigation/src/favicon.ico",
               "apps/navigation/src/assets"
             ],
-            "styles": ["apps/navigation/src/styles.scss"],
+            "styles": [
+              "apps/navigation/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +85,10 @@
               "apps/navigation/tsconfig.app.json",
               "apps/navigation/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/navigation/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/navigation/**/*"
+            ]
           }
         },
         "test": {
@@ -118,8 +123,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/navigation-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/navigation-e2e/**/*"]
+            "tsConfig": [
+              "apps/navigation-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/navigation-e2e/**/*"
+            ]
           }
         }
       }
@@ -137,7 +147,10 @@
               "libs/navigation/step-a/tsconfig.lib.json",
               "libs/navigation/step-a/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/navigation/step-a/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/step-a/**/*"
+            ]
           }
         },
         "test": {
@@ -169,7 +182,10 @@
               "libs/navigation/step-b/tsconfig.lib.json",
               "libs/navigation/step-b/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/navigation/step-b/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/step-b/**/*"
+            ]
           }
         },
         "test": {
@@ -201,7 +217,10 @@
               "libs/navigation/step-c/tsconfig.lib.json",
               "libs/navigation/step-c/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/navigation/step-c/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/step-c/**/*"
+            ]
           }
         },
         "test": {
@@ -233,7 +252,10 @@
               "libs/navigation/step-d/tsconfig.lib.json",
               "libs/navigation/step-d/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/navigation/step-d/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/step-d/**/*"
+            ]
           }
         },
         "test": {
@@ -300,7 +322,10 @@
               "libs/navigation/router/tsconfig.lib.json",
               "libs/navigation/router/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/navigation/router/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/router/**/*"
+            ]
           }
         },
         "test": {
@@ -319,29 +344,32 @@
         }
       }
     },
-    "step-navigation": {
+    "navigation-step-navigation": {
       "projectType": "library",
-      "root": "libs/step-navigation",
-      "sourceRoot": "libs/step-navigation/src",
+      "root": "libs/navigation/step-navigation",
+      "sourceRoot": "libs/navigation/step-navigation/src",
       "prefix": "monorepos",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/step-navigation/tsconfig.lib.json",
-              "libs/step-navigation/tsconfig.spec.json"
+              "libs/navigation/step-navigation/tsconfig.lib.json",
+              "libs/navigation/step-navigation/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/step-navigation/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/step-navigation/**/*"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/step-navigation/jest.config.js",
-            "tsConfig": "libs/step-navigation/tsconfig.spec.json",
+            "jestConfig": "libs/navigation/step-navigation/jest.config.js",
+            "tsConfig": "libs/navigation/step-navigation/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/step-navigation/src/test-setup.ts"
+            "setupFile": "libs/navigation/step-navigation/src/test-setup.ts"
           }
         }
       },

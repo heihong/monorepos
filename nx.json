@@ -17,7 +17,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -27,7 +32,9 @@
     },
     "navigation-e2e": {
       "tags": [],
-      "implicitDependencies": ["navigation"]
+      "implicitDependencies": [
+        "navigation"
+      ]
     },
     "navigation-step-a": {
       "tags": []
@@ -47,7 +54,7 @@
     "navigation-router": {
       "tags": []
     },
-    "step-navigation": {
+    "navigation-step-navigation": {
       "tags": []
     }
   }

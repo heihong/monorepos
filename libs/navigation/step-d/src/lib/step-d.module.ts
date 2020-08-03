@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Route } from '@angular/router';
 import { StepDComponent } from './step-d/step-d.component';
-import { StepNavigationModule } from '@monorepos/step-navigation'
+import { NavigationStepNavigationModule } from '@monorepos/navigation/step-navigation'
 
 export const stepDRoutes: Route[] = [];
 
@@ -12,7 +12,7 @@ export const stepDRoutes: Route[] = [];
     RouterModule.forChild([
       {path: '', pathMatch: 'full', component: StepDComponent}
     ]),
-    StepNavigationModule
+    NavigationStepNavigationModule
   ],
   declarations: [StepDComponent],
 })
