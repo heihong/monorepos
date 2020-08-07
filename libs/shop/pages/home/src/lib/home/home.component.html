@@ -1,0 +1,9 @@
+<ul *ngIf="(loading$ | async) === false; else loading">
+    <li *ngFor="let book of bookList$ | async">
+        {{book.title}}
+    </li>
+</ul>
+
+<ng-template #loading>
+    isLoading
+</ng-template>
