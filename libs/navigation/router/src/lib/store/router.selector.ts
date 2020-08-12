@@ -2,6 +2,7 @@ import * as fromRouter from '@ngrx/router-store';
 import { createSelector } from '@ngrx/store';
 import { StoreRootState } from './router.reducer';
 
+
 export const getRouterState = (state: StoreRootState) => state.router;
 
 export const getCurrentRouteState = createSelector(
