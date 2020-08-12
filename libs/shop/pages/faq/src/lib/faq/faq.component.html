@@ -1,0 +1,4 @@
+<div *ngFor="let group of faq">
+    <p class="accordion-summary">{{ group.question }}</p>
+    <p class="accordion-details" [innerHTML]="group.answer"></p>
+</div>
