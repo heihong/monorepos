@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { PATH } from './settings/path.settings'
 import { StoreModule } from '@ngrx/store';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
-import { CustomSerializer, reducers } from '@monorepos/navigation/router';
+import { CustomSerializer, routerReducers } from '@monorepos/navigation/router';
 
 const routes = [
   {
@@ -47,7 +47,7 @@ const routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    StoreModule.forRoot(reducers),
+    StoreModule.forRoot(routerReducers),
    // !environment.production ? StoreDevtoolsModule.instrument() : [],
    StoreDevtoolsModule.instrument(),
    StoreRouterConnectingModule.forRoot({
