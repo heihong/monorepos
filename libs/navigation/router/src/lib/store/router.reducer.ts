@@ -5,6 +5,6 @@ import { routerReducer } from '@ngrx/router-store';
 export interface StoreRootState {
   router: fromRouter.RouterReducerState<any>;
 }
-export const reducers: ActionReducerMap<StoreRootState> = {
+export const routerReducers: ActionReducerMap<StoreRootState> = {
   router: routerReducer,
 };
