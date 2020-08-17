@@ -5,4 +5,4 @@ export const goTo = createAction(`[Utils Router] Navigate to path`, props<Router
 
 export const nextTo = createAction(`[Utils Router] Navigate next to path`, props<RouterStateUrl>());
 
-export const backTo = createAction(`[Utils Router] Navigate backto path`, props<RouterStateUrl>());
+export const backTo = createAction(`[Utils Router] Navigate back to path`, props<RouterStateUrl>());
