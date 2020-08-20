@@ -10,27 +10,51 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@monorepos/navigation/step-a": ["libs/navigation/step-a/src/index.ts"],
-      "@monorepos/navigation/step-b": ["libs/navigation/step-b/src/index.ts"],
-      "@monorepos/navigation/step-c": ["libs/navigation/step-c/src/index.ts"],
-      "@monorepos/navigation/step-d": ["libs/navigation/step-d/src/index.ts"],
+      "@monorepos/navigation/step-a": [
+        "libs/navigation/step-a/src/index.ts"
+      ],
+      "@monorepos/navigation/step-b": [
+        "libs/navigation/step-b/src/index.ts"
+      ],
+      "@monorepos/navigation/step-c": [
+        "libs/navigation/step-c/src/index.ts"
+      ],
+      "@monorepos/navigation/step-d": [
+        "libs/navigation/step-d/src/index.ts"
+      ],
       "@monorepos/navigation/data-setup": [
         "libs/navigation/data-setup/src/index.ts"
       ],
-      "@monorepos/navigation/router": ["libs/navigation/router/src/index.ts"],
-      "@monorepos/shop/stores/book": ["libs/shop/stores/book/src/index.ts"],
-      "@monorepos/shop/pages/home": ["libs/shop/pages/home/src/index.ts"],
+      "@monorepos/shop/stores/book": [
+        "libs/shop/stores/book/src/index.ts"
+      ],
+      "@monorepos/shop/pages/home": [
+        "libs/shop/pages/home/src/index.ts"
+      ],
       "@monorepos/navigation/step-navigation": [
         "libs/navigation/step-navigation/src/index.ts"
       ],
-      "@monorepos/shop/pages/faq": ["libs/shop/pages/faq/src/index.ts"]
+      "@monorepos/shop/pages/faq": [
+        "libs/shop/pages/faq/src/index.ts"
+      ],
+      "@monorepos/navigation/store/router": [
+        "libs/navigation/store/router/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

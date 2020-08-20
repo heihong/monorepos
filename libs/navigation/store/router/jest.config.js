@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'navigation-router',
-  preset: '../../../jest.config.js',
+  name: 'navigation-store-router',
+  preset: '../../../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -12,7 +12,7 @@ module.exports = {
       ],
     },
   },
-  coverageDirectory: '../../../coverage/libs/navigation/router',
+  coverageDirectory: '../../../../coverage/libs/navigation/store/router',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

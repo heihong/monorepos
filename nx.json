@@ -17,7 +17,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -27,7 +32,9 @@
     },
     "navigation-e2e": {
       "tags": [],
-      "implicitDependencies": ["navigation"]
+      "implicitDependencies": [
+        "navigation"
+      ]
     },
     "navigation-step-a": {
       "tags": []
@@ -44,15 +51,14 @@
     "navigation-data-setup": {
       "tags": []
     },
-    "navigation-router": {
-      "tags": []
-    },
     "shop": {
       "tags": []
     },
     "shop-e2e": {
       "tags": [],
-      "implicitDependencies": ["shop"]
+      "implicitDependencies": [
+        "shop"
+      ]
     },
     "shop-stores-book": {
       "tags": []
@@ -64,6 +70,9 @@
       "tags": []
     },
     "shop-pages-faq": {
+      "tags": []
+    },
+    "navigation-store-router": {
       "tags": []
     }
   }
