@@ -13,8 +13,8 @@ export class StepResolver implements Resolve<boolean> {
     }
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
-        
         this.userflowStore.dispatch(fromActions.setSteps({steps}));
+        this.userflowStore.dispatch(fromActions.getStepsCourant());
         return state;
     }
 }

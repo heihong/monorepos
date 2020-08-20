@@ -1,14 +1,23 @@
 import * as fromActions from './userflow.actions';
+import { Params, RouterStateSnapshot } from '@angular/router';
 
 import { createReducer, on, Action, createFeatureSelector } from '@ngrx/store';
 
 export interface UserflowState {
   steps: string[];
+  stepCourant: RouterStateCourant
 }
 
 const initialState: UserflowState = {
-  steps: null
+  steps: null,
+  stepCourant: null
 };
+
+export interface RouterStateCourant {
+  url: string;
+  params: Params;
+  queryParams: Params;
+}
 
 export const reducer = createReducer(
   initialState,
@@ -18,6 +27,13 @@ export const reducer = createReducer(
       ...state,
       steps,
     })
+  ),
+  on(
+    fromActions.setStepsCourant,
+    (state, { stepCourant }): UserflowState => ({
+      ...state,
+      stepCourant,
+    })
   )
 );
 
@@ -26,6 +42,8 @@ export function userflowReducer(state: UserflowState | undefined, action: Action
 }
 
 
-export const bookStateSelector = createFeatureSelector<UserflowState>(
+export const userflowStateSelector = createFeatureSelector<UserflowState>(
   'userflowState'
 );
+
+

@@ -8,6 +8,7 @@ import { Path } from './settings/path.settings'
 import { StoreModule } from '@ngrx/store';
 import { NgrxRouterModule } from '@monorepos/navigation/store/router';
 import { StepResolver } from '../resolver/step.resolver';
+import { EffectsModule } from '@ngrx/effects';
 
 const routes = [
   {
@@ -24,19 +25,28 @@ const routes = [
     loadChildren: () =>
       import(
         '@monorepos/navigation/step-b'
-      ).then(m => m.StepBModule)
+      ).then(m => m.StepBModule),
+      resolve: {
+        data: StepResolver
+      }
   },{
     path: Path.Step_C,
     loadChildren: () =>
       import(
         '@monorepos/navigation/step-c'
-      ).then(m => m.StepCModule)
+      ).then(m => m.StepCModule),
+      resolve: {
+        data: StepResolver
+      }
   },{
     path: Path.Step_D,
     loadChildren: () =>
       import(
         '@monorepos/navigation/step-d'
-      ).then(m => m.StepDModule)
+      ).then(m => m.StepDModule),
+      resolve: {
+        data: StepResolver
+      }
   },
   {
     path: '',
@@ -51,6 +61,7 @@ const routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     StoreModule.forRoot({}),
+    EffectsModule.forRoot([]),
     NgrxRouterModule,
    // !environment.production ? StoreDevtoolsModule.instrument() : [],
    StoreDevtoolsModule.instrument(),
