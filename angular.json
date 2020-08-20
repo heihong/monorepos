@@ -25,9 +25,7 @@
               "apps/navigation/src/favicon.ico",
               "apps/navigation/src/assets"
             ],
-            "styles": [
-              "apps/navigation/src/styles.scss"
-            ],
+            "styles": ["apps/navigation/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -85,10 +83,7 @@
               "apps/navigation/tsconfig.app.json",
               "apps/navigation/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/navigation/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/navigation/**/*"]
           }
         },
         "test": {
@@ -123,13 +118,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/navigation-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/navigation-e2e/**/*"
-            ]
+            "tsConfig": ["apps/navigation-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/navigation-e2e/**/*"]
           }
         }
       }
@@ -147,10 +137,7 @@
               "libs/navigation/step-a/tsconfig.lib.json",
               "libs/navigation/step-a/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/navigation/step-a/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-a/**/*"]
           }
         },
         "test": {
@@ -182,10 +169,7 @@
               "libs/navigation/step-b/tsconfig.lib.json",
               "libs/navigation/step-b/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/navigation/step-b/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-b/**/*"]
           }
         },
         "test": {
@@ -217,10 +201,7 @@
               "libs/navigation/step-c/tsconfig.lib.json",
               "libs/navigation/step-c/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/navigation/step-c/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-c/**/*"]
           }
         },
         "test": {
@@ -252,10 +233,7 @@
               "libs/navigation/step-d/tsconfig.lib.json",
               "libs/navigation/step-d/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/navigation/step-d/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/navigation/step-d/**/*"]
           }
         },
         "test": {
@@ -265,41 +243,6 @@
             "tsConfig": "libs/navigation/step-d/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/navigation/step-d/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      }
-    },
-    "navigation-data-setup": {
-      "projectType": "library",
-      "root": "libs/navigation/data-setup",
-      "sourceRoot": "libs/navigation/data-setup/src",
-      "prefix": "monorepos",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/navigation/data-setup/tsconfig.lib.json",
-              "libs/navigation/data-setup/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/navigation/data-setup/**/*"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/navigation/data-setup/jest.config.js",
-            "tsConfig": "libs/navigation/data-setup/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/navigation/data-setup/src/test-setup.ts"
           }
         }
       },
@@ -329,13 +272,8 @@
             "polyfills": "apps/shop/src/polyfills.ts",
             "tsConfig": "apps/shop/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/shop/src/favicon.ico",
-              "apps/shop/src/assets"
-            ],
-            "styles": [
-              "apps/shop/src/styles.scss"
-            ],
+            "assets": ["apps/shop/src/favicon.ico", "apps/shop/src/assets"],
+            "styles": ["apps/shop/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -393,10 +331,7 @@
               "apps/shop/tsconfig.app.json",
               "apps/shop/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/shop/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/shop/**/*"]
           }
         },
         "test": {
@@ -431,13 +366,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/shop-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/shop-e2e/**/*"
-            ]
+            "tsConfig": ["apps/shop-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/shop-e2e/**/*"]
           }
         }
       }
@@ -455,10 +385,7 @@
               "libs/shop/stores/book/tsconfig.lib.json",
               "libs/shop/stores/book/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shop/stores/book/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shop/stores/book/**/*"]
           }
         },
         "test": {
@@ -490,10 +417,7 @@
               "libs/shop/pages/home/tsconfig.lib.json",
               "libs/shop/pages/home/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shop/pages/home/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shop/pages/home/**/*"]
           }
         },
         "test": {
@@ -560,10 +484,7 @@
               "libs/shop/pages/faq/tsconfig.lib.json",
               "libs/shop/pages/faq/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shop/pages/faq/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shop/pages/faq/**/*"]
           }
         },
         "test": {
@@ -608,6 +529,41 @@
             "tsConfig": "libs/navigation/store/router/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/navigation/store/router/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "navigation-store-userflow": {
+      "projectType": "library",
+      "root": "libs/navigation/store/userflow",
+      "sourceRoot": "libs/navigation/store/userflow/src",
+      "prefix": "monorepos",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/navigation/store/userflow/tsconfig.lib.json",
+              "libs/navigation/store/userflow/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/navigation/store/userflow/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/navigation/store/userflow/jest.config.js",
+            "tsConfig": "libs/navigation/store/userflow/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/navigation/store/userflow/src/test-setup.ts"
           }
         }
       },

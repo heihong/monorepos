@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'navigation-data-setup',
-  preset: '../../../jest.config.js',
+  name: 'navigation-store-userflow',
+  preset: '../../../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -12,7 +12,7 @@ module.exports = {
       ],
     },
   },
-  coverageDirectory: '../../../coverage/libs/navigation/data-setup',
+  coverageDirectory: '../../../../coverage/libs/navigation/store/userflow',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',
