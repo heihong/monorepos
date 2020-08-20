@@ -20,11 +20,9 @@ export class UserflowEffects {
             ofType(fromActions.getStepsCourant),
             withLatestFrom(this.userflowFacade.getRouterCourant$),
             map( ([, state]) => {
-                console.log('test')
-               return fromActions.setStepsCourant(state.state);
+               return fromActions.setStepsCourant({stepCourant: state.state});
             })
-        ),
-        { dispatch: false }
+        )
     );
     
     constructor(
