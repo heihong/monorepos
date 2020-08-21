@@ -21,9 +21,18 @@ export const setStepsCourant = createAction(
 );
 
 export const next = createAction(
-  `[Utils Router] Next`
+  `[Userflow] Next`
 );
 
+
+export const go = createAction(
+  `[Userflow] Go`,
+  props<{
+    stepKey: string;
+  }>()
+);
+
+
 export const previous = createAction(
-  `[Utils Router] Previous`
+  `[Userflow] Previous`
 );

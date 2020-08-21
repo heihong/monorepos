@@ -14,6 +14,7 @@ export const stepARoutes: Route[] = [];
       {path: '', pathMatch: 'full', component: StepAComponent}
     ]),
     StepNavigationModule,
+    UserflowModule
   ],
   declarations: [StepAComponent],
 })

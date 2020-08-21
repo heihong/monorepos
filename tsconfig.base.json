@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@monorepos/navigation/*": ["apps/navigation/src/app/*"],
       "@monorepos/navigation/step-a": ["libs/navigation/step-a/src/index.ts"],
       "@monorepos/navigation/step-b": ["libs/navigation/step-b/src/index.ts"],
       "@monorepos/navigation/step-c": ["libs/navigation/step-c/src/index.ts"],

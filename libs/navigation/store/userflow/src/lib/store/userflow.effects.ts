@@ -12,7 +12,7 @@ export class UserflowEffects {
         this.actions$.pipe(
             ofType(fromActions.next),
             withLatestFrom(this.userflowFacade.getSteps$, this.userflowFacade.getStepCourant$),
-            tap(( [, steps, stepCourant])=>{
+            tap(( [, steps, stepCourant] )=> {
                 const index = steps.indexOf(stepCourant.url.split('/')[1]);
                 this.router.navigate([steps[index+1]]);
             })
@@ -25,9 +25,20 @@ export class UserflowEffects {
         this.actions$.pipe(
             ofType(fromActions.previous),
             withLatestFrom(this.userflowFacade.getSteps$, this.userflowFacade.getStepCourant$),
-            tap(( [, steps, stepCourant])=>{
+            tap(( [, steps, stepCourant]) => {
                 const index = steps.indexOf(stepCourant.url.split('/')[1]);
                 this.router.navigate([steps[index-1]]);
+            })
+        ),
+        { dispatch: false }
+    );
+
+    go$ = createEffect(
+        () =>
+        this.actions$.pipe(
+            ofType(fromActions.go),
+            tap(({stepKey}) => {
+                this.router.navigate([stepKey]);
             })
         ),
         { dispatch: false }
