@@ -20,7 +20,6 @@ export const setStepsCourant = createAction(
   }>()
 );
 
-
 export const next = createAction(
   `[Utils Router] Next`
 );

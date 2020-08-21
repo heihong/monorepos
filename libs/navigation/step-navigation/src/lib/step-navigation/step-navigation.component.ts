@@ -1,5 +1,8 @@
 import { Component, ChangeDetectionStrategy,  EventEmitter, Input,
   Output } from '@angular/core';
+import * as fromActions from '@monorepos/navigation/store/userflow';
+import * as fromReducer from '@monorepos/navigation/store/userflow';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'monorepos-step-navigation',
@@ -8,9 +11,17 @@ import { Component, ChangeDetectionStrategy,  EventEmitter, Input,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StepNavigationComponent {
-  @Input() disablePrevious: boolean = false;
-  @Input() disableNext: boolean = false;
-  @Output() next = new EventEmitter<MouseEvent>();
-  @Output() previous = new EventEmitter<MouseEvent>();
+  @Input() disablePrevious= false;
+  @Input() disableNext = false;
 
+  constructor(private userflowStore: Store<fromReducer.UserflowState>) {
+  }
+ 
+  next() {
+    this.userflowStore.dispatch(fromActions.next());
+  }
+
+  previous() {
+    this.userflowStore.dispatch(fromActions.previous());
+  }
 }
